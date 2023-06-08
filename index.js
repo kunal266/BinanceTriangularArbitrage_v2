@@ -12,7 +12,7 @@ const server = app.listen(3000, () =>
 app.use(cors());
 app.use('/JS', express.static(path.join(__dirname, './JS')));
 app.get('/', (_, res) => {
-  res.sendFile(path.join(__dirname, './index.html'));
+  res.sendFile(path.join(__dirname, './arb.html'));
 });
 
 const io = socket(server);
