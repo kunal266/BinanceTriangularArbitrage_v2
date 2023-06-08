@@ -17,7 +17,7 @@ app.get('/', (_, res) => {
 
 const io = socket(server);
 
-const arbitrage = require('../arbitrage');
+const arbitrage = require('./arbitrage');
 
 const initialize = async () => {
   await arbitrage.getPairs();
